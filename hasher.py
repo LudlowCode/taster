@@ -10,4 +10,4 @@ counter=1
 while counter <=9999:
     if hash("{:04d}".format(counter))=="43dd49b4fdb9bede653e94468ff8df1e":
         print(counter)
-        counter+=1
+    counter+=1
