@@ -1,7 +1,9 @@
 import hashlib
 #hashedString = input("Please input the hashed string")
 
+def hash(unhashed_string):
+    return hashlib.md5(unhashed_string.encode('utf-8')).hexdigest()
 
 while True:
-    unhashedString = input("Please input the string: ")
-    print(hashlib.md5(unhashedString.encode('utf-8')).hexdigest())
+    entered_string = input("Please input the string: ")
+    print(hash(entered_string))
