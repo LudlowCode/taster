@@ -6,12 +6,6 @@ def hash(unhashed_string):
 def pad_to_4_digits(int_to_pad):
     return str(int_to_pad).zfill(4)
 
-
-number = 6
-attempt = pad_to_4_digits(number)
-hash(attempt)
-
-
 while True:
     entered_string = input("Please guess the secret to receive a hash digest: ")
     print(hash(entered_string))
